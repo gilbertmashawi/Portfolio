@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".feedback"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+
+    <RatingBar
+
+        android:layout_margin="10dp"
+        android:id="@+id/ratingBar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="1"/>
+
+    <TextView
+        android:layout_margin="10dp"
+        android:layout_below="@id/ratingBar1"
+        android:id="@+id/tView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Rating" />
+
+
+    <EditText
+        android:id="@+id/feedbackWrite"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="reviews here,include bugs found,need to improve"
+        android:layout_gravity="right"
+        android:layout_above="@id/feebacksend"
+
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:drawableLeft="@drawable/feebback"
+        android:layout_gravity="right"
+        android:id="@+id/feebacksend"
+        android:text="send"
+        />
+
+</RelativeLayout>
